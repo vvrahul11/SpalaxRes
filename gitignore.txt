@@ -162,3 +162,5 @@ cython_debug/
 ##SpalaxRes
 DMBA/Results/entrezID/*
 DMBA/Results/genesymbol/*
+CompareCluster_timePoints.png
+venn_diagram.png
