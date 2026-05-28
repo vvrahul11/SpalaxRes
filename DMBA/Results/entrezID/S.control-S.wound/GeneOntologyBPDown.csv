@@ -1,0 +1,50 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"GO:0072330","GO:0072330","monocarboxylic acid biosynthetic process","16/214","151/13279",2.66113869167664e-09,6.82848188284226e-06,6.25507652475151e-06,"Abcd2/Acsbg1/Aldh8a1/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Gamt/Nr1d1/Olah/Ptgds/Ptgis/Slc45a3",16
+"GO:0006631","GO:0006631","fatty acid metabolic process","21/214","299/13279",1.54330979436231e-08,1.98006646616685e-05,1.81379514253213e-05,"Abcd2/Acsbg1/Adtrp/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Fabp2/Fmo2/Lep/Olah/Pck1/Pla2g2f/Ptgds/Ptgis/Slc45a3/Tnxb/Ucp3",21
+"GO:0006633","GO:0006633","fatty acid biosynthetic process","13/214","121/13279",7.29149548933948e-08,6.2366591418817e-05,5.71295067638423e-05,"Abcd2/Acsbg1/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Olah/Ptgds/Ptgis/Slc45a3",13
+"GO:0016042","GO:0016042","lipid catabolic process","18/214","251/13279",1.26296351474034e-07,8.10191094705928e-05,7.42157244319784e-05,"Aadac/Abcd2/Acer1/Adtrp/Apoa1/Apoe/Asah2/Cidea/Daglb/Gpihbp1/Lep/Lipk/Neu3/Pck1/Pla2g2f/Plin1/Sctr/Smpd3",18
+"GO:0032787","GO:0032787","monocarboxylic acid metabolic process","24/214","439/13279",1.69059108456809e-07,8.67611344600346e-05,7.94755766703275e-05,"Abcd2/Acsbg1/Adtrp/Aldh8a1/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Fabp2/Fmo2/Gamt/Lep/Nr1d1/Olah/Pck1/Pla2g2f/Ptgds/Ptgis/Slc45a3/Tnxb/Ucp3",24
+"GO:0046394","GO:0046394","carboxylic acid biosynthetic process","16/214","218/13279",4.74988095856377e-07,0.000185194782984283,0.000169643496083974,"Abcd2/Acsbg1/Aldh8a1/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Gamt/Nr1d1/Olah/Ptgds/Ptgis/Slc45a3",16
+"GO:0016053","GO:0016053","organic acid biosynthetic process","16/214","219/13279",5.05207903698356e-07,0.000185194782984283,0.000169643496083974,"Abcd2/Acsbg1/Aldh8a1/Alox12b/Aloxe3/Apoa1/Asah2/Daglb/Elovl7/Fa2h/Gamt/Nr1d1/Olah/Ptgds/Ptgis/Slc45a3",16
+"GO:0044283","GO:0044283","small molecule biosynthetic process","22/214","423/13279",1.31758443017941e-06,0.000422615205980045,0.000387127109551397,"Abcd2/Acer1/Acsbg1/Aldh8a1/Alox12b/Aloxe3/Apoa1/Apoe/Asah2/Daglb/Elovl7/Fa2h/Gamt/Lep/Lepr/Nr1d1/Olah/Pcbd1/Pck1/Ptgds/Ptgis/Slc45a3",22
+"GO:0006665","GO:0006665","sphingolipid metabolic process","11/214","135/13279",1.14835911555177e-05,0.00288681522810298,0.00264440185599292,"Acer1/Alox12b/Aloxe3/Asah2/Elovl7/Fa2h/Gal3st1/Neu3/P2rx1/Psapl1/Smpd3",11
+"GO:0001676","GO:0001676","long-chain fatty acid metabolic process","7/214","49/13279",1.23752796216418e-05,0.00288681522810298,0.00264440185599292,"Acsbg1/Adtrp/Alox12b/Aloxe3/Asah2/Daglb/Pla2g2f",7
+"GO:0033559","GO:0033559","unsaturated fatty acid metabolic process","7/214","49/13279",1.23752796216418e-05,0.00288681522810298,0.00264440185599292,"Abcd2/Alox12b/Aloxe3/Daglb/Pla2g2f/Ptgds/Ptgis",7
+"GO:0030148","GO:0030148","sphingolipid biosynthetic process","9/214","90/13279",1.41402051479996e-05,0.00302364720081391,0.00276974369258624,"Acer1/Alox12b/Aloxe3/Asah2/Elovl7/Fa2h/Gal3st1/P2rx1/Smpd3",9
+"GO:0006672","GO:0006672","ceramide metabolic process","9/214","93/13279",1.84709313664094e-05,0.00364587768355435,0.00333972386568358,"Acer1/Alox12b/Aloxe3/Asah2/Fa2h/Gal3st1/Neu3/P2rx1/Smpd3",9
+"GO:0050996","GO:0050996","positive regulation of lipid catabolic process","5/214","22/13279",2.18467836330119e-05,0.00400420334302203,0.00366795998891094,"Aadac/Abcd2/Apoa1/Daglb/Sctr",5
+"GO:0042759","GO:0042759","long-chain fatty acid biosynthetic process","4/214","12/13279",2.93343054770345e-05,0.00487045848696518,0.00446147343864842,"Acsbg1/Alox12b/Aloxe3/Asah2",4
+"GO:0019730","GO:0019730","antimicrobial humoral response","7/214","56/13279",3.03691877597205e-05,0.00487045848696518,0.00446147343864842,"Ccl22/Jchain/Klk5/Ppl/Spink5/Tslp/Wfdc3",7
+"GO:0030104","GO:0030104","water homeostasis","7/214","57/13279",3.41522776299908e-05,0.00489641473710138,0.00448525007504917,"Acer1/Alox12b/Aloxe3/Aqp11/Cldn4/Fa2h/Sctr",7
+"GO:0019731","GO:0019731","antibacterial humoral response","5/214","24/13279",3.43474143678195e-05,0.00489641473710138,0.00448525007504917,"Jchain/Klk5/Ppl/Spink5/Wfdc3",5
+"GO:0070830","GO:0070830","bicellular tight junction assembly","7/214","60/13279",4.78909124115977e-05,0.00616903192687853,0.00565100229426088,"Cgn/Cldn22/Cldn23/Cldn3/Cldn4/Cldn8/Marveld3",7
+"GO:0044242","GO:0044242","cellular lipid catabolic process","12/214","186/13279",4.80828677075489e-05,0.00616903192687853,0.00565100229426088,"Aadac/Abcd2/Acer1/Adtrp/Apoa1/Asah2/Daglb/Gpihbp1/Lep/Neu3/Pck1/Smpd3",12
+"GO:0046513","GO:0046513","ceramide biosynthetic process","7/214","63/13279",6.58616075788839e-05,0.0080476611927341,0.00737187818163648,"Alox12b/Aloxe3/Asah2/Fa2h/Gal3st1/P2rx1/Smpd3",7
+"GO:0120192","GO:0120192","tight junction assembly","7/214","66/13279",8.8999282711286e-05,0.0103805527016891,0.00950887073178477,"Cgn/Cldn22/Cldn23/Cldn3/Cldn4/Cldn8/Marveld3",7
+"GO:0019369","GO:0019369","arachidonic acid metabolic process","4/214","16/13279",0.000102522290538473,0.0114379216313792,0.0104774496463346,"Alox12b/Aloxe3/Daglb/Pla2g2f",4
+"GO:0006643","GO:0006643","membrane lipid metabolic process","11/214","173/13279",0.000113280310287093,0.0121115531748617,0.0110945145996088,"Acer1/Alox12b/Aloxe3/Asah2/Elovl7/Fa2h/Gal3st1/Neu3/P2rx1/Psapl1/Smpd3",11
+"GO:0043297","GO:0043297","apical junction assembly","7/214","69/13279",0.000118366438325331,0.0121491312297119,0.0111289371275984,"Cgn/Cldn22/Cldn23/Cldn3/Cldn4/Cldn8/Marveld3",7
+"GO:0033561","GO:0033561","regulation of water loss via skin","5/214","32/13279",0.000146529283804857,0.0142131983028914,0.0130196791280127,"Acer1/Alox12b/Aloxe3/Cldn4/Fa2h",5
+"GO:0120193","GO:0120193","tight junction organization","7/214","72/13279",0.000155158655397495,0.0142131983028914,0.0130196791280127,"Cgn/Cldn22/Cldn23/Cldn3/Cldn4/Cldn8/Marveld3",7
+"GO:0019216","GO:0019216","regulation of lipid metabolic process","15/214","311/13279",0.000157793301602129,0.0142131983028914,0.0130196791280127,"Aadac/Abcd2/Acer1/Apoa1/Apoe/Cidea/Daglb/Fmo2/Lep/Nr1d1/Pck1/Psapl1/Sctr/Slc45a3/Smpd3",15
+"GO:0050891","GO:0050891","multicellular organismal water homeostasis","6/214","51/13279",0.000160632404826131,0.0142131983028914,0.0130196791280127,"Acer1/Alox12b/Aloxe3/Cldn4/Fa2h/Sctr",6
+"GO:0046467","GO:0046467","membrane lipid biosynthetic process","9/214","124/13279",0.000177251939998864,0.0151609492679028,0.0138878449830689,"Acer1/Alox12b/Aloxe3/Asah2/Elovl7/Fa2h/Gal3st1/P2rx1/Smpd3",9
+"GO:0007188","GO:0007188","adenylate cyclase-modulating G protein-coupled receptor signaling pathway","11/214","183/13279",0.000186055610011952,0.0154006030738925,0.0141073744365599,"Adra2c/Akap12/Akap5/Cnr2/Galr3/Grm8/Htr4/Npy2r/Pln/Psapl1/Sctr",11
+"GO:0050994","GO:0050994","regulation of lipid catabolic process","6/214","53/13279",0.000199359896157696,0.0159861716731452,0.0146437713197413,"Aadac/Abcd2/Apoa1/Cidea/Daglb/Sctr",6
+"GO:0007193","GO:0007193","adenylate cyclase-inhibiting G protein-coupled receptor signaling pathway","6/214","57/13279",0.000298717147135013,0.0232275211984376,0.0212770459187395,"Akap12/Akap5/Grm8/Htr4/Npy2r/Psapl1",6
+"GO:0006690","GO:0006690","icosanoid metabolic process","6/214","60/13279",0.000395931450638476,0.0298811794805391,0.0273719792345423,"Alox12b/Aloxe3/Daglb/Pla2g2f/Ptgds/Ptgis",6
+"GO:0120254","GO:0120254","olefinic compound metabolic process","6/214","62/13279",0.000473368807744379,0.0347046960192022,0.0317904525622015,"Aldh8a1/Alox12b/Aloxe3/Daglb/Pla2g2f/Sdr16c5",6
+"GO:0045834","GO:0045834","positive regulation of lipid metabolic process","9/214","143/13279",0.000511918290892125,0.0355953083763237,0.0326062778866681,"Aadac/Abcd2/Apoa1/Apoe/Daglb/Nr1d1/Sctr/Slc45a3/Smpd3",9
+"GO:0006641","GO:0006641","triglyceride metabolic process","7/214","88/13279",0.000538196090300423,0.0355953083763237,0.0326062778866681,"Aadac/Apoa1/Apoe/Daglb/Gpihbp1/Pck1/Tnxb",7
+"GO:0006639","GO:0006639","acylglycerol metabolic process","8/214","115/13279",0.000539479937171346,0.0355953083763237,0.0326062778866681,"Aadac/Apoa1/Apoe/Awat2/Daglb/Gpihbp1/Pck1/Tnxb",8
+"GO:0019433","GO:0019433","triglyceride catabolic process","4/214","24/13279",0.000541004297223938,0.0355953083763237,0.0326062778866681,"Aadac/Apoa1/Daglb/Gpihbp1",4
+"GO:0006638","GO:0006638","neutral lipid metabolic process","8/214","116/13279",0.000571560324490015,0.0366655948160345,0.0335866895943738,"Aadac/Apoa1/Apoe/Awat2/Daglb/Gpihbp1/Pck1/Tnxb",8
+"GO:0002759","GO:0002759","regulation of antimicrobial humoral response","3/214","11/13279",0.000618959044459711,0.0387377782459419,0.0354848663999624,"Klk5/Ppl/Spink5",3
+"GO:0045104","GO:0045104","intermediate filament cytoskeleton organization","6/214","66/13279",0.000663296760866901,0.0405242735329635,0.0371213450379897,"Eppk1/Krt23/Krt77/Krt78/Krt80/Ppl",6
+"GO:0045103","GO:0045103","intermediate filament-based process","6/214","67/13279",0.000718895794878962,0.0428996885967306,0.0392972903296138,"Eppk1/Krt23/Krt77/Krt78/Krt80/Ppl",6
+"GO:0050878","GO:0050878","regulation of body fluid levels","13/214","287/13279",0.000779494675116665,0.0454587121897583,0.0416414260654429,"Acer1/Adra2c/Adtrp/Alox12b/Aloxe3/Apoe/Btc/Cldn4/Fa2h/P2rx1/Sctr/Serpind1/Vtn",13
+"GO:0010896","GO:0010896","regulation of triglyceride catabolic process","3/214","12/13279",0.000815500624120601,0.0454907522063796,0.0416707755986568,"Aadac/Apoa1/Daglb",3
+"GO:0044241","GO:0044241","lipid digestion","3/214","12/13279",0.000815500624120601,0.0454907522063796,0.0416707755986568,"Apoa1/Asah2/Lep",3
+"GO:0061436","GO:0061436","establishment of skin barrier","4/214","27/13279",0.000860370380417429,0.0469725616202367,0.0430281536275951,"Alox12b/Aloxe3/Cldn4/Fa2h",4
+"GO:0052547","GO:0052547","regulation of peptidase activity","13/214","291/13279",0.000885524414907031,0.047338659346905,0.0433635091773553,"Cldn3/Cldn4/Gsn/Mgmt/P2rx1/Serpinb12/Serpinb7/Serpind1/Spink5/Timp4/Vtn/Wfdc3/Wfikkn2",13
+"GO:0061844","GO:0061844","antimicrobial humoral immune response mediated by antimicrobial peptide","5/214","47/13279",0.000917635723378645,0.0480541482895838,0.0440189166553064,"Ccl22/Klk5/Ppl/Spink5/Tslp",5

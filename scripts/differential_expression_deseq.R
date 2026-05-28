@@ -57,7 +57,7 @@ calculate_diff <- function(d1,
   #find p-values and correct for multiple testing
   res <- results(dds,
                  pAdjustMethod = "fdr",
-                 alpha = 0.05,
+                 alpha = 0.01,
                  lfcThreshold = 0,
                  contrast=c("group", groupNames[2], groupNames[1]))
   
@@ -65,11 +65,11 @@ calculate_diff <- function(d1,
   
   res_df = data.frame(res)
   res_df$padj[is.na(res_df$padj)] = 1 # replace NA in p.adj with 1
-  res_df_filt = res_df[res_df$padj < 0.05, ] #threshold on p.adj
-  res_df_filt = res_df_filt[abs(res_df_filt$log2FoldChange) > 1.5, ] #threshold on LFC
+  res_df_filt = res_df[res_df$padj < 0.01, ] #threshold on p.adj
+  res_df_filt = res_df_filt[abs(res_df_filt$log2FoldChange) > 2.5, ] #threshold on LFC
   
-  DESeq2::plotMA(res,  alpha = 0.05)
-  abline(h=c(-1.5, 1.5), col="red")
+  #DESeq2::plotMA(res,  alpha = 0.01)
+  #abline(h=c(-2.5, 2.5), col="red")
   
   genes = row.names(res_df_filt)
   genesUp = row.names(res_df_filt[res_df_filt$log2FoldChange > 0,])
@@ -93,7 +93,18 @@ calculate_diff <- function(d1,
     Cluster.ProfileR(genes,
                      backgroundIDs,
                      foldchange.dge.genes,
-                     IDtype)
+                     IDtype,
+                     "")
+    Cluster.ProfileR(genesUp,
+                     backgroundIDs,
+                     foldchange.dge.genesUp,
+                     IDtype,
+                     "Up")
+    Cluster.ProfileR(genesDown,
+                     backgroundIDs,
+                     foldchange.dge.genesDown,
+                     IDtype,
+                     "Down")
     
     write.csv(rownames(res_df), 
               "Allgenes.csv", 
@@ -113,7 +124,18 @@ calculate_diff <- function(d1,
     Cluster.ProfileR(genes,
                      backgroundIDs,
                      foldchange.dge.genes,
-                     IDtype)
+                     IDtype,
+                     "")
+    Cluster.ProfileR(genesUp,
+                     backgroundIDs,
+                     foldchange.dge.genesUp,
+                     IDtype,
+                     "Up")
+    Cluster.ProfileR(genesDown,
+                     backgroundIDs,
+                     foldchange.dge.genesDown,
+                     IDtype,
+                     "Down")
     
     write.csv(rownames(res_df), 
               "Allgenes.csv", 
@@ -138,14 +160,15 @@ calculate_diff <- function(d1,
 pathviewMake <- function(path.ids, 
                          exp.fc, 
                          out.suffix){
-  #load("kegg.gs.mmu.RData")
-  #data(korg, package="pathview")
+  load("C:/projects/Final Rat Trans Project Result2023/FinalProjectWorkAugust/kegg.gs.mmu.RData")
+  data(korg, package="pathview")
   print("Going to plot pathview maps")
+  print(path.ids)
   pv.out.list <- sapply(path.ids, 
                         function(pid) pathview(gene.data =  exp.fc, 
                                                pathway.id = pid,
                                                species = "mmu",
-                                               out.suffix="deseq",
+                                               out.suffix="edger",
                                                #limit      = list(gene=max(abs(exp.fc)), cpd=1)
                         )
   )
@@ -242,7 +265,8 @@ plotEnrichment <- function(ego, enrichmentType, geneList){
 Cluster.ProfileR <- function(genes, 
                              backgroundIDs, 
                              foldchange,
-                             IDtype){
+                             IDtype,
+                             extension){
   if(IDtype == 2){
     # backgroundIDs1 = bitr(backgroundIDs, 
     #                      fromType="SYMBOL", 
@@ -262,7 +286,7 @@ Cluster.ProfileR <- function(genes,
                     pvalueCutoff  = 0.05,
                     qvalueCutoff  = 0.05,
                     readable      = TRUE)
-    write.csv(ego, "GeneOntologyBP.csv")
+    write.csv(ego, paste("GeneOntologyBP", extension, ".csv", sep=""))
     tryCatch({
       plotEnrichment(ego, "EnrichGO", foldchange)  
     }, error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
@@ -277,7 +301,8 @@ Cluster.ProfileR <- function(genes,
                                       universe=backgroundIDs,
                                       minGSSize = 10,
                                       maxGSSize = 500)
-    write.csv(reactomePathways, "reactome_pathways.csv")
+    write.csv(reactomePathways, paste("reactome_pathways.csv", extension, ".csv", sep=""))
+    
     tryCatch({
       plotEnrichment(reactomePathways, "Reactome", foldchange) 
     }, error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
@@ -286,20 +311,20 @@ Cluster.ProfileR <- function(genes,
     #### KEGG ####
     keggpathways <- enrichKEGG(gene         = genes,
                                organism     = 'mouse',
-                               pvalueCutoff = 0.5,  # This value is set hight to generate figures
+                               pvalueCutoff = 0.05,  # This value is set hight to generate figures
                                pAdjustMethod     = "fdr",
                                universe = backgroundIDs,
                                minGSSize         = 10,
                                maxGSSize         = 500,
-                               qvalueCutoff      = 0.5)
-    write.csv(keggpathways, "Kegg_pathway.csv")
+                               qvalueCutoff      = 0.05)
+    write.csv(keggpathways, paste("Kegg_pathway.csv", extension, ".csv", sep=""))
     tryCatch({
       plotEnrichment(keggpathways, "KEGG", foldchange) 
     }, error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
     #kegg.reactome.pathways= cbind(keggpathways, reactomePathways)
     #write.csv(kegg-reactome.pathways, "kegg-reactomePathways.csv")    
     
-    kegg.pids = keggpathways[which(keggpathways$qvalue < 0.5), ]$ID
+    kegg.pids = keggpathways[which(keggpathways$qvalue < 0.05), ]$ID
     if(length(kegg.pids > 1)){
       tryCatch({
         pathviewMake(kegg.pids, foldchange, "deseq")  
@@ -422,8 +447,8 @@ main <-function(){
     if(i ==1){
       counts_table = Counts
       ## create directory Results_DESEQ2
-      dir.create(paste(getwd(), "/Results_DESEQ2/genesymbol/", sep = ""), recursive = TRUE)
-      setwd(paste(getwd(), "/Results_DESEQ2/genesymbol/", sep = ""))
+      dir.create(paste(getwd(), "/Results/genesymbol/", sep = ""), recursive = TRUE)
+      setwd(paste(getwd(), "/Results/genesymbol/", sep = ""))
       mainDir <- getwd()  
     }else{
       counts_table = CountsID
