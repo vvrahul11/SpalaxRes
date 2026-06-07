@@ -15,20 +15,6 @@ a = "Acod1/Adam8/Adora2b/Anxa1/Apoa1/Apoe/C1qtnf3/Ccr5/Clcf1/Cnr2/Daglb/Duoxa2/G
 b = "Acod1/Ada/Adam8/Adipoq/Adora1/Adora3/Agt/Aoc3/Ccl24/Clcf1/Esr1/Fcer1a/Ffar4/Ggt1/Gpx2/Il1b/Il22ra2/Il33/Il6/Isl1/Lpl/Mmp8/Nlrp3/Npy/Nr1d2/Osm/Pbk/Pglyrp1/Pla2g5/Ptger3/Ptgs2/S100a9/Scgb1a1/Serpine1/Sucnr1/Tnc/Tnfsf11/Tnfsf4/Wfdc1/Ccn4".split("/")
 
 
-#### Comparison All DEG in Spalax and Upregulated in Mouse
-# response to bacterium
-# Spalax
-#a = "Abcd2/Acod1/Adamts4/Adamts9/Bcl3/Bdkrb1/Cd14/Cd86/Cfb/Clec4e/Cnr2/Cxcl10/Dmbt1/Gch1/Hck/Il1a/Il1f10/Il6/Jchain/Klk5/Lcn2/Litaf/Lrg1/Ltf/Ly6g6c/Nlrc4/Nlrc5/Nlrp3/Nod2/Nos3/Nr1d1/Pck1/Pde4b/Pglyrp1/Plac8/Plscr1/Ppl/Ptafr/Ptgs2/Rgs1/S100a9/Serpine1/Slc11a1/Snca/Spink5/Tlr2/Tnf/Tnfaip3/Tnnt2/Trib1/Tslp/Usp18/Vgf/Wfdc3/Zfp36".split("/")
-# Mouse
-#b = "Acod1/Adamts4/Arg2/Bcl3/Bdkrb1/Cd14/Clec4d/Clec4e/Gpx2/Gsdmc/Il1b/Il23a/Il6/Lcn2/Lpo/Lrat/Lyg2/Nlrp3/Npy/Pglyrp1/Ptgs2/S100a9/Scnn1b/Serpine1/Tnfsf4/Wfdc2".split("/")
-
-# Regulation of defense response
-# Spalax
-#a = "Acod1/Adam8/Adora2b/Anxa1/Apoa1/Apoe/Arg1/C1qtnf3/Ccr5/Clcf1/Clec7a/Cnr2/Daglb/Duoxa2/Ggt1/Grp/Il17ra/Il1r1/Il6/Klk5/Lep/Lrp8/Mefv/Mmp12/Mmp8/Nfkbiz/Nlrc4/Nlrc5/Nlrp12/Nlrp3/Nod2/Nr1d1/Osm/Pglyrp1/Plscr1/Ppl/Ptgis/Ptgs2/S100a9/Serpine1/Snca/Socs3/Spink5/Tlr2/Tlr8/Tnc/Tnf/Tnfaip3/Tslp/Vav1/Zfp36".split("/")
-# Mouse
-#b = "Acod1/Ada/Adam8/Arg1/Arg2/Ccr1/Cfi/Clcf1/Fcer1a/Ggt1/Gja1/Gpx2/Il1b/Il23a/Il33/Il6/Mmp8/Nlrp3/Npy/Osm/Pbk/Pglyrp1/Ptgs2/S100a9/Serpine1/Tnc/Tnfsf11/Tnfsf4/Treml4/Ccn4".split("/")
-
-
 # Find intersection
 a = set(a)
 b = set(b)
@@ -104,8 +90,8 @@ sns.heatmap(
 axes[1].set_ylabel("Gene names", fontsize=12, labelpad=30)  # increases distance from axis
 axes[1].yaxis.set_label_coords(-0.15, 0.9)  # x-position, y-position in axes fraction
 
-fig.savefig("gene_venn_heatmap.png", dpi=600, bbox_inches='tight')
-fig.savefig("gene_venn_heatmap.pdf", bbox_inches='tight')
+#fig.savefig("gene_venn_heatmap.png", dpi=600, bbox_inches='tight')
+#fig.savefig("gene_venn_heatmap.pdf", bbox_inches='tight')
 
 plt.tight_layout()
 plt.show()

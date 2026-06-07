@@ -9,7 +9,10 @@ from scipy.cluster.hierarchy import linkage, leaves_list
 path = "C:/projects/Final Rat Trans Project Result2023/blindmolerat_rnaseqanalysis-2024/DMBA/Results_10092025_f2.5_p0.01_SELECTED/genesymbol/"
 os.chdir(path)
 
+# regulation of inflammatory response genes in both species
+# Spalax
 a = "Acod1/Adam8/Adora2b/Anxa1/Apoa1/Apoe/C1qtnf3/Ccr5/Clcf1/Cnr2/Daglb/Duoxa2/Ggt1/Il17ra/Il1r1/Il6/Mefv/Mmp8/Nfkbiz/Nlrp12/Nlrp3/Nod2/Nr1d1/Osm/Pglyrp1/Ptgis/Ptgs2/S100a9/Serpine1/Snca/Socs3/Tlr2/Tnc/Tnf/Tnfaip3/Tslp/Zfp36".split("/")
+# Mouse
 b = "Acod1/Ada/Adam8/Arg1/Arg2/Ccr1/Cfi/Clcf1/Fcer1a/Ggt1/Gja1/Gpx2/Il1b/Il23a/Il33/Il6/Mmp8/Nlrp3/Npy/Osm/Pbk/Pglyrp1/Ptgs2/S100a9/Serpine1/Tnc/Tnfsf11/Tnfsf4/Treml4/Ccn4".split("/")
 
 # Find intersection

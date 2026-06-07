@@ -1,5 +1,4 @@
-"""The logic here is to understand which genes invloved in inflammatory BP that is common between Spalax and mouse and what are the other BPs
-Currently the top 50"""
+"""The logic here is to plot a network of the spalax core immune activation and regulatory pathways genes"""
 
 import pandas as pd
 from collections import Counter
@@ -15,14 +14,7 @@ df = pd.read_csv("S.control-S.wound/GeneOntologyBP.csv")
 #df = pd.read_csv("MM.control-M.wound/GeneOntologyBP.csv") 
 df["gene_list"] = df["geneID"].str.split("/")
 
-# Your common genes
-a = "Acod1/Adam8/Adora2b/Anxa1/Apoa1/Apoe/C1qtnf3/Ccr5/Clcf1/Cnr2/Daglb/Duoxa2/Ggt1/Il17ra/Il1r1/Il6/Mefv/Mmp8/Nfkbiz/Nlrp12/Nlrp3/Nod2/Nr1d1/Osm/Pglyrp1/Ptgis/Ptgs2/S100a9/Serpine1/Snca/Socs3/Tlr2/Tnc/Tnf/Tnfaip3/Tslp/Zfp36".split("/")
-# Mouse
-b = "Acod1/Ada/Adam8/Adipoq/Adora1/Adora3/Agt/Aoc3/Ccl24/Clcf1/Esr1/Fcer1a/Ffar4/Ggt1/Gpx2/Il1b/Il22ra2/Il33/Il6/Isl1/Lpl/Mmp8/Nlrp3/Npy/Nr1d2/Osm/Pbk/Pglyrp1/Pla2g5/Ptger3/Ptgs2/S100a9/Scgb1a1/Serpine1/Sucnr1/Tnc/Tnfsf11/Tnfsf4/Wfdc1/Ccn4".split("/")
-a = set(a)
-b = set(b)
-
-common_genes = ["Acod1", "Nlrp3", "Il6"] #a & b
+common_genes = ["Zfp36", "Socs3", "Nlrp3", "Nlrp12", "Anxa1", "Acod1"] #a & b
 # Filter rows containing at least one common gene
 df_filtered = df[df["gene_list"].apply(lambda genes: any(g in genes for g in common_genes))]
 #import pdb; pdb.set_trace()
@@ -67,5 +59,5 @@ pos = nx.kamada_kawai_layout(G)
 nx.draw(G, pos, with_labels=True, node_color=colors, node_size=sizes,
         font_size=10, font_weight='bold', edge_color='gray')
 plt.title("Biological Processes involving Selected Common Genes", fontsize=14)
-
-plt.savefig("nlrp3_acod1.png", dpi=600, bbox_inches='tight')
+#plt.show()
+plt.savefig("C:/projects/Final Rat Trans Project Result2023/blindmolerat_rnaseqanalysis-2024/nlrp3_acod1.png", dpi=600, bbox_inches='tight')
