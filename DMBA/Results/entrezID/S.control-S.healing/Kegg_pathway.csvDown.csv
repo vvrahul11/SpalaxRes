@@ -1,0 +1,5 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"mmu04061","mmu04061","Viral protein interaction with cytokine and cytokine receptor - Mus musculus (house mouse)","1/1","62/6234",0.00994546037856914,0.0282322746230348,NA,"24047",1
+"mmu04064","mmu04064","NF-kappa B signaling pathway - Mus musculus (house mouse)","1/1","88/6234",0.0141161373115174,0.0282322746230348,NA,"24047",1
+"mmu04062","mmu04062","Chemokine signaling pathway - Mus musculus (house mouse)","1/1","153/6234",0.0245428296438882,0.0316008982996473,NA,"24047",1
+"mmu04060","mmu04060","Cytokine-cytokine receptor interaction - Mus musculus (house mouse)","1/1","197/6234",0.0316008982996473,0.0316008982996473,NA,"24047",1

@@ -172,6 +172,7 @@ pathviewMake <- function(path.ids,
                          out.suffix){
   load("C:/projects/Final Rat Trans Project Result2023/FinalProjectWorkAugust/kegg.gs.mmu.RData")
   data(korg, package="pathview")
+  print(path.ids)
   print("Going to plot pathview maps")
   pv.out.list <- sapply(path.ids, 
                         function(pid) pathview(gene.data =  exp.fc, 
@@ -332,7 +333,7 @@ Cluster.ProfileR <- function(genes,
     #kegg.reactome.pathways= cbind(keggpathways, reactomePathways)
     #write.csv(kegg-reactome.pathways, "kegg-reactomePathways.csv")    
     
-    kegg.pids = keggpathways[which(keggpathways$qvalue < 0.5), ]$ID
+    kegg.pids = keggpathways[which(keggpathways$qvalue < 0.05), ]$ID
     if(length(kegg.pids > 1)){
       tryCatch({
         pathviewMake(kegg.pids, foldchange, "edger")  
