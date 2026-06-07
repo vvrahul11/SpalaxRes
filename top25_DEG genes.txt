@@ -1,0 +1,11 @@
+Spalax – Wound Upregulated : Fgf23, Csf3, Mmp8, Chit1, Il6, Pglyrp1, Ltf, Acod1, Lcn2, Slc11a1, Lrg1, Osm, Wnt7a, Mmp9, Treml2, Ptgs2, Cxcr2, Fpr1, Csn3, Il24, Mmp20, Bmx, Spta1, Cxcr1, Arg1 
+Spalax – Wound Downregulated : Duox2, Mrgprg, Duoxa2, Pgr, Anxa13, Arl5c, Ces4a, Aqp11, Igsf21, Cldn22, Slc5a8, Kera, Slc46a2, Jakmip3, Ccdc129, Cnr2, Gpr1, Btc, Aadac, Krt77, Syna, Fabp2, Nell2, Prss38, Cela1 
+
+Spalax – Scab Upregulated : Treml4, Tmprss11d, Mmp20, Il23r, Tnfsf18, Mgam, Slc7a14, Fam71a, Mrps10, Adarb2, Ptgs2, Drd4, Slfnl1, Adam30, Kl, Osm, Sall4, Wnt7a, Ralyl, Nell1, Adm2, Rrh, Cdh12, Tecrl, Acod1 
+Spalax – Scab Downregulated : Ccer2, Cldn15, Apoa1, Btc, Krt24, Smim6, Cfap57, Dlk1, Eps8l3, Dynlrb2, Wfdc3, Crp, Gcsam, Gpr1, Slc7a3, Cabp1, Duoxa2, Cebpe, Krt77, Slc16a11, Adad1, Il22ra2, Kcnk7, Gal3st1, Tomm7 
+
+Mouse – Wound Upregulated : Tmprss11d, Il24, Pla2g4d, Lyg2, Cdhr1, Pla2g4b, S100a9, Akr1d1, Klk13, Fxyd4, Clrn3, Mmp13, Krt26, Olah, Gsdmc, Tmprss11a, Gjb6, Pde6b, Csf3, Klk6, Hoxc11, Kcne1, Acan, Slc7a11, Fgf23 
+Mouse – Wound Downregulated : Odf3l2, Pon1, Krt77, Ccdc27, Mrgprg, Chat, Krt24, Ankrd31, Slc27a2, Tgm7, Olig1, Prr29, Ddn, Myh4, Pvalb, Angptl7, Klhl14, Fgf4, Chad, Stmn3, Myoc, Mylk4, Emilin3, Gabra4, Pck1 
+
+Mouse – Scab Upregulated : - scab Knl1 Tmprss11d Actbl2 Cdhr1 Pla2g4b Lyg2 Pla2g4d Il24 Nrg1 Krt82 Shh Crnn Krt71 Pou5f2 Padi3 Rptn Krt25 Capn8 Klk13 Krt40 Olah Tmprss11a Akr1d1 Gp6 Slc7a11 
+Mouse – Scab Downregulated : - Scab Krt77 Pon1 Nnat Adipoq Mrgprg Il22ra2 Krt24 Odf3l2 Cxcl13 Slc27a2 Il12a Cfd Pla2g5 Scgb1a1 Cdo1 Bbox1 Pvalb Thrsp Rbp4 Ccl24 Tspan8 Retn Chat Cidec Acsm5
