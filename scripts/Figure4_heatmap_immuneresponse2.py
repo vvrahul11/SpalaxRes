@@ -93,6 +93,6 @@ ax3.axis("off")
 ax3.set_title("Placeholder for future plot", fontsize=14)
 
 fig.savefig("gene_venn_heatmap.png", dpi=600, bbox_inches='tight')
-fig.savefig("gene_venn_heatmap.pdf", bbox_inches='tight')
+#fig.savefig("gene_venn_heatmap.pdf", bbox_inches='tight')
 plt.tight_layout()
 plt.show()
